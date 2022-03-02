@@ -1,15 +1,11 @@
 const checkLength = (str) => {
-    
-    if (str.length < 11) {
-      return true;
+    return str.length <= 10;
     }
 
-}
 const filterLongNumbers = (arr) => {
     return arr.filter(checkLength);
 
 }
-console.log(checkLength('1234567'));
 
 const numbers = [
     '1763687364',
